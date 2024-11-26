@@ -1,29 +1,39 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 'use client';
 
- // any component that uses useAuth needs this because if a component directly imports useAuth, it needs to be a client component since useAuth uses React hooks.
-
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { Button } from 'react-bootstrap';
-import { signOut } from '@/utils/auth'; // anything in the src dir, you can use the @ instead of relative paths
-import { useAuth } from '@/utils/context/authContext';
+import { useAuth } from '../utils/context/authContext';
+import ItemCard from '../components/ItemCard';
+import { getItems } from '../api/itemData';
 
 function Home() {
+  // State to hold items
+  const [items, setItems] = useState([]);
   const { user } = useAuth();
+  // Function to fetch all items
+  const fetchAllItems = () => {
+    getItems(user.uid).then(setItems);
+  };
+
+  // Fetch items on component render
+  useEffect(() => {
+    getItems(user.uid).then(setItems);
+  }, []);
 
   return (
-    <div
-      className="text-center d-flex flex-column justify-content-center align-content-center"
-      style={{
-        height: '90vh',
-        padding: '30px',
-        maxWidth: '400px',
-        margin: '0 auto',
-      }}
-    >
-      <h1>Hello {user.displayName}! </h1>
-      <p>Click the button below to logout!</p>
-      <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
-        Sign Out
-      </Button>
+    <div className="text-center my-4">
+      <Link href="/items/new" passHref>
+        <Button>Add An Item</Button>
+      </Link>
+      <div className="d-flex flex-wrap justify-content-center">
+        {/* Map over items and display them using ItemCard */}
+        {items.map((item) => (
+          <ItemCard key={item.firebaseKey} itemObj={item} onUpdate={fetchAllItems} />
+        ))}
+      </div>
     </div>
   );
 }
