@@ -1,5 +1,6 @@
 # 🎁 **GiftSup.io** 🎁  
-![GiftSup Logo](https://files.slack.com/files-tmb/T03F2SDTJ-F082FGL8T19-0b54de7a69/gitsupio_720.png)
+![GitSupio](https://github.com/user-attachments/assets/f81af774-9f75-47cc-8eec-1eaab3c2d8f4)
+
 
 Welcome to **GiftSup.io** — the ultimate tool to make gifting stress-free and fun! Whether you're shopping for a loved one or keeping track of your own wishlist, we've got you covered. 🎉
 
