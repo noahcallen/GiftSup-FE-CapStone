@@ -69,7 +69,7 @@ Follow our development journey: [GitHub Project Board](https://github.com/users/
 ---
 
 ## 🎥 **Video Walkthrough**
-Watch how it works in under 1 minute: [Loom Walkthrough](example link)
+Watch how it works in under 2 minute: [[Loom Walkthrough](example link)](https://www.loom.com/share/dae66f8a3135497483a872d1dcb0f9b2?sid=0400a836-36a7-4ede-926e-f4cd1e2d70b0)
 
 ---
 
