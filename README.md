@@ -19,7 +19,7 @@ Take a sneak peek at how the app comes together:
 ---
 
 ## 🌐 **Live Project**
-Experience the magic here: [GiftSup.io (Netlify Deployment)](example)
+Experience the magic here: [[GiftSup.io (Netlify Deployment)]([example](https://gitsupio.netlify.app))](https://gitsupio.netlify.app)
 
 ---
 
@@ -52,12 +52,19 @@ Follow our development journey: [GitHub Project Board](https://github.com/users/
 
 ## 📸 **Screenshots**
 
-Coming soon... 📷✨
+![image](https://github.com/user-attachments/assets/6c955895-ee4f-49a1-97ff-8d68a1dd8bbc)
+![image](https://github.com/user-attachments/assets/2605f717-3f10-4ee8-aa8f-cc7b1e7f4cb3)
+![image](https://github.com/user-attachments/assets/adab702d-a231-47c9-9a33-3dee0a5a17e1)
+![image](https://github.com/user-attachments/assets/61b12b11-b2d5-4ff8-a7b9-6814a86c38e6)
+
+
+
+
 
 ---
 
 ## 🛠 **Contributors**
-- Noah Callen ([GitHub Profile](https://github.com/noahcallen))
+- Noah C Allen ([GitHub Profile](https://github.com/noahcallen))
 
 ---
 
