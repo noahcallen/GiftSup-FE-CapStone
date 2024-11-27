@@ -109,14 +109,11 @@ To run this project locally, follow these steps:
 ### 1. **Clone the Repository**  
 
 Frontend:   
-`git clone https://github.com/AndrewSpur73/FullstackBeatsFE.git`
-
-Backend:   
-`git clone https://github.com/AndrewSpur73/FullstackBeatsBE.git`
+`git clone https://github.com/noahcallen/GiftSup-FE-CapStone.git`
 
 ### 2. **Install Dependencies**
 
-`cd FullstackBeatsFE`   
+`cd Giftsup-FE-Capstone`   
 `npm install`
 
 ### 3. **Create env and setup with firebase**
