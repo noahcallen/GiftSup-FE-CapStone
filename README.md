@@ -19,7 +19,7 @@ Take a sneak peek at how the app comes together:
 ---
 
 ## 🌐 **Live Project**
-Experience the magic here: [[GiftSup.io (Netlify Deployment)]([example](https://gitsupio.netlify.app))](https://gitsupio.netlify.app)
+Experience the magic here: [GiftSup.io](https://gitsupio.netlify.app)
 
 ---
 
@@ -37,7 +37,7 @@ Follow our development journey: [GitHub Project Board](https://github.com/users/
 
 ---
 
-## ✨ **App Features (MVP)**
+## ✨ **Current App Features (MVP)**
 
 ✔️ **Items**  
    - ✅ Create: Add items to your wishlist with ease.  
@@ -53,14 +53,78 @@ Follow our development journey: [GitHub Project Board](https://github.com/users/
 ## 📸 **Screenshots**
 
 ![image](https://github.com/user-attachments/assets/119836e5-740e-4202-9fcf-225408569322)
-![image](https://github.com/user-attachments/assets/8843e6e4-1ba7-4f1b-8608-0cb33a86d9e3)
-![image](https://github.com/user-attachments/assets/70f610dd-f5d3-4e04-a26d-293eb1d3cb78)
-![image](https://github.com/user-attachments/assets/ecf17850-daa7-4dc2-9f57-eb32bd1312bc)
+![image](https://github.com/user-attachments/assets/595ce8bd-08d7-4beb-b69e-21410287f20a)
+![image](https://github.com/user-attachments/assets/d922a970-d6b7-4bd0-97c3-c57c06e9bae8)
+![image](https://github.com/user-attachments/assets/750b4495-de9e-4eed-a9a6-e88327cf614d)
+
+---
+## 🎉 Features Coming Soon 🚀
+
+We're excited to share the roadmap for **GiftSup.io**! Here’s what’s in the works to make your experience even better:
+
+### 🛠 Planned Features:
+1. **Notifications**  
+   - Get notified when someone purchases a gift from your wishlist.
+   - Stay updated on profile interactions and special events.
+
+2. **Friend Management**  
+   - Add, remove, and organize friends directly within the app.
+   - View friends’ wishlists to simplify gift-giving.
+
+3. **Mobile Experience**  
+   - Optimized layouts and navigation for seamless use on mobile devices.
+   - Responsive design enhancements for better usability.
+
+4. **Wishlist Sharing**  
+   - Generate shareable links to send your wishlist to friends and family.
+   - Add privacy controls to manage who can view your lists.
+
+5. **Enhanced Gift Tracking**  
+   - Mark gifts as purchased or reserved to avoid duplicates.
+   - Track the status of items across multiple wishlists.
+
+6. **Bookmark Favorite Profiles**  
+   - Save frequently visited profiles for quick access.
+   - Receive updates when bookmarked profiles are updated.
+
+7. **Customizable Profiles**  
+   - Personalize your profile with themes, colors, and more.
+   - Showcase your unique style while keeping things functional.
+
+---
+
+## 🛠 **Technologies Used**  
+
+- **Frontend**: React, Next.js  
+- **Backend**: Firebase for authentication and data storage  
+- **Package Manager**: npm  
+- **Deployment**: Netlify  
+
+---
+
+## 🛠 **Getting Started**
+
+To run this project locally, follow these steps:  
+
+### 1. **Clone the Repository**  
+
+Frontend:   
+`git clone https://github.com/AndrewSpur73/FullstackBeatsFE.git`
+
+Backend:   
+`git clone https://github.com/AndrewSpur73/FullstackBeatsBE.git`
+
+### 2. **Install Dependencies**
+
+`cd FullstackBeatsFE`   
+`npm install`
+
+### 3. **Create env and setup with firebase**
+[Firebase](https://console.firebase.google.com)
 
 
-
-
-
+### 4. **Run App**
+`npm run dev`
 
 ---
 
@@ -70,7 +134,7 @@ Follow our development journey: [GitHub Project Board](https://github.com/users/
 ---
 
 ## 🎥 **Video Walkthrough**
-Watch how it works in under 2 minute: [[Loom Walkthrough](example link)](https://www.loom.com/share/dae66f8a3135497483a872d1dcb0f9b2?sid=0400a836-36a7-4ede-926e-f4cd1e2d70b0)
+Watch how it works in under 2 minute: [here](https://www.loom.com/share/270f878307c047aab0206190b29e1e6a?sid=335967aa-75ba-47e5-8d99-563462a55f63)
 
 ---
 
