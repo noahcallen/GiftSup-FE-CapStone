@@ -52,10 +52,11 @@ Follow our development journey: [GitHub Project Board](https://github.com/users/
 
 ## 📸 **Screenshots**
 
-![image](https://github.com/user-attachments/assets/6c955895-ee4f-49a1-97ff-8d68a1dd8bbc)
-![image](https://github.com/user-attachments/assets/2605f717-3f10-4ee8-aa8f-cc7b1e7f4cb3)
-![image](https://github.com/user-attachments/assets/adab702d-a231-47c9-9a33-3dee0a5a17e1)
-![image](https://github.com/user-attachments/assets/61b12b11-b2d5-4ff8-a7b9-6814a86c38e6)
+![image](https://github.com/user-attachments/assets/119836e5-740e-4202-9fcf-225408569322)
+![image](https://github.com/user-attachments/assets/8843e6e4-1ba7-4f1b-8608-0cb33a86d9e3)
+![image](https://github.com/user-attachments/assets/70f610dd-f5d3-4e04-a26d-293eb1d3cb78)
+![image](https://github.com/user-attachments/assets/ecf17850-daa7-4dc2-9f57-eb32bd1312bc)
+
 
 
 
