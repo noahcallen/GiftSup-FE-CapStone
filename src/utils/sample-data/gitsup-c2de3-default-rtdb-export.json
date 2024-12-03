@@ -1,0 +1,143 @@
+{
+  "friendships": {
+    "friendship1": {
+      "firebaseKey": 1,
+      "userId1": 1,
+      "userId2": 2
+    }
+  },
+  "items": {
+    "-OCaL9B0PakHwEQNb4Yd": {
+      "favorite": true,
+      "firebaseKey": "-OCaL9B0PakHwEQNb4Yd",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSpk0NAnxmsj13M8zT39dlsi1t4o64HVhFw&s",
+      "listId": "103",
+      "name": "second account",
+      "uid": "HiBfYcadH6g3YZT0XJw9CQze9Rr1",
+      "url": "https://noahallen-biolinks.netlify.app/"
+    },
+    "-OCfU6F6l2GzoNL1e7C5": {
+      "favorite": true,
+      "firebaseKey": "-OCfU6F6l2GzoNL1e7C5",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhIWFRUVFRcYFRcXFxUXFRgXFRUXFxUXFxcYHSggGBolHRUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGyslHyUtLS0tLS0tLS0vLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAL8BCAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAQIDBAYABwj/xABBEAABAwIEAwYDBgIJBAMAAAABAAIRAyEEBRIxBkFREyJhcYGRobHBFDJCUtHwI+EHFTNicoKSosIWQ1PxNJOy/8QAGQEAAgMBAAAAAAAAAAAAAAAAAAECAwQF/8QAJxEAAgIBBAICAgIDAAAAAAAAAAECEQMEEiExQWETIlFxMkIFFYH/2gAMAwEAAhEDEQA/APTsfSpdo0tjUoKX9qUPGX1qeIBfBbyN0Roj+KUmSQRanhNYFIAkBXxAsULwzLmyL1HX2lNBPJvwUr4FQA4owrqlB7WCSWkD2WU/ou4cxGGc41mRMbGeS9K7/wCX4Jwa/pHsi0FEtMKRNpMjdPURiLoTkiAIagBsSFWbgqI5D2Vw0gUooBO2FFZtOmOXwTpYNm/BWOxHRd2Y6IthSI6V+SY5pYZ/DzViPJLHkkAIqaftAdb7qvhuq526IUzDj7YTP4dkcSQ2NAXR5p3ukKYhpCiNEdFNCRAEXYjoEKzzGmiGaWzqcBYTujKF5/Xcxgc1uo6hZJ9DXZepmQD1HRO903DucWguEGFIQmhDE0hPITSPJADCPJNIUh9EwnxQAw+a5K71XIAp4vNNdRrYS0ao7UhNzDLWMqNe036SlwdP+K4pyBBhieAmNT9SQCgJYSApZQB0LoSyulACLkpKz1TP2VS9tNw0tsTP3ifoqc2eOKNssxYpZHSC9XHtFhJ8tvdMw+ZMdzgrCY/ipjKposcHl",
+      "listId": "103",
+      "name": "Kitty Kat",
+      "uid": "hHwdIpFvEbZevbbCX9T5y93vG6P2",
+      "url": "https://noahallen-biolinks.netlify.app/"
+    },
+    "-OCfUsGXRa7dy0Ltl51Y": {
+      "favorite": false,
+      "firebaseKey": "-OCfUsGXRa7dy0Ltl51Y",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSpk0NAnxmsj13M8zT39dlsi1t4o64HVhFw&s",
+      "listId": "103",
+      "name": "test",
+      "uid": "hHwdIpFvEbZevbbCX9T5y93vG6P2",
+      "url": "https://noahallen-biolinks.netlify.app/"
+    },
+    "-OCj7tSsEJCa8TLN34Zh": {
+      "favorite": true,
+      "firebaseKey": "-OCj7tSsEJCa8TLN34Zh",
+      "image": "https://assets.nvidia.partners/images/png/ROG_Strix_GeForce_RTX_4090_White_Edition_OC_packaging_with_graphics_card_NV_logo__68910.png",
+      "listId": "101",
+      "name": "ASUS ROG Strix GeForce RTX™ 4090 White OC Ed",
+      "uid": "6LeJLGsIqZMJ5VD1d5Ic2vIKble2",
+      "url": "https://marketplace.nvidia.com/en-us/consumer/graphics-cards/asus-rog-strix-geforce-rtx-4090-white-oc-ed/"
+    },
+    "-OCj8baWZ8VnNQjZg62K": {
+      "favorite": false,
+      "firebaseKey": "-OCj8baWZ8VnNQjZg62K",
+      "image": "https://assets.corsair.com/image/upload/c_pad,q_85,h_1100,w_1100,f_auto/products/Gaming-Desks/CF-9500053/CF-9500053_01.webp",
+      "listId": "101",
+      "name": "Platform:6 Creator Edition Desk - Wood, Dark Walnut Stain",
+      "uid": "6LeJLGsIqZMJ5VD1d5Ic2vIKble2",
+      "url": "https://www.corsair.com/us/en/p/gaming-furniture/cf-9500053-na/platform-6-creator-edition-desk-wood-dark-walnut-stain-cf-9500053-na"
+    },
+    "item1": {
+      "favorite": true,
+      "firebaseKey": 1,
+      "image": "https://example.com/item1.jpg",
+      "listId": "102",
+      "name": "Sony Wireless Headphones",
+      "storeId": 1,
+      "url": "https://example.com/product1"
+    },
+    "item2": {
+      "favorite": false,
+      "firebaseKey": 2,
+      "image": "https://example.com/item2.jpg",
+      "listId": 101,
+      "name": "Smartwatch",
+      "storeId": 2,
+      "url": "https://example.com/product2"
+    },
+    "item3": {
+      "favorite": true,
+      "firebaseKey": 3,
+      "image": "https://example.com/item3.jpg",
+      "listId": 102,
+      "name": "Gaming Mouse",
+      "storeId": 3,
+      "url": "https://example.com/product3"
+    }
+  },
+  "stores": {
+    "store1": {
+      "firebaseKey": 1,
+      "name": "Best Buy"
+    },
+    "store2": {
+      "firebaseKey": 2,
+      "name": "Amazon"
+    },
+    "store3": {
+      "firebaseKey": 3,
+      "name": "Walmart"
+    }
+  },
+  "users": {
+    "6LeJLGsIqZMJ5VD1d5Ic2vIKble2": {
+      "about": "Max",
+      "image": "https://avatars.githubusercontent.com/u/137121714?v=4",
+      "uid": "6LeJLGsIqZMJ5VD1d5Ic2vIKble2",
+      "userName": "maxman222"
+    },
+    "hHwdIpFvEbZevbbCX9T5y93vG6P2": {
+      "about": "Noah Allen",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhIWFRUVFRcYFRcXFxUXFRgXFRUXFxUXFxcYHSggGBolHRUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGyslHyUtLS0tLS0tLS0vLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAL8BCAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAQIDBAYABwj/xABBEAABAwIEAwYDBgIJBAMAAAABAAIRAyEEBRIxBkFREyJhcYGRobHBFDJCUtHwI+EHFTNicoKSosIWQ1PxNJOy/8QAGQEAAgMBAAAAAAAAAAAAAAAAAAECAwQF/8QAJxEAAgIBBAICAgIDAAAAAAAAAAECEQMEEiExQWETIlFxMkIFFYH/2gAMAwEAAhEDEQA/APTsfSpdo0tjUoKX9qUPGX1qeIBfBbyN0Roj+KUmSQRanhNYFIAkBXxAsULwzLmyL1HX2lNBPJvwUr4FQA4owrqlB7WCSWkD2WU/ou4cxGGc41mRMbGeS9K7/wCX4Jwa/pHsi0FEtMKRNpMjdPURiLoTkiAIagBsSFWbgqI5D2Vw0gUooBO2FFZtOmOXwTpYNm/BWOxHRd2Y6IthSI6V+SY5pYZ/DzViPJLHkkAIqaftAdb7qvhuq526IUzDj7YTP4dkcSQ2NAXR5p3ukKYhpCiNEdFNCRAEXYjoEKzzGmiGaWzqcBYTujKF5/Xcxgc1uo6hZJ9DXZepmQD1HRO903DucWguEGFIQmhDE0hPITSPJADCPJNIUh9EwnxQAw+a5K71XIAp4vNNdRrYS0ao7UhNzDLWMqNe036SlwdP+K4pyBBhieAmNT9SQCgJYSApZQB0LoSyulACLkpKz1TP2VS9tNw0tsTP3ifoqc2eOKNssxYpZHSC9XHtFhJ8tvdMw+ZMdzgrCY/ipjKposcHl",
+      "uid": "hHwdIpFvEbZevbbCX9T5y93vG6P2",
+      "userName": "NoahNewAccount"
+    },
+    "user1": {
+      "image": "https://example.com/john.jpg",
+      "name": "John Doe",
+      "uid": 1,
+      "username": "johndoe"
+    },
+    "user2": {
+      "image": "https://example.com/jane.jpg",
+      "name": "Jane Smith",
+      "uid": 2,
+      "username": "janesmith"
+    }
+  },
+  "wishlists": {
+    "wishlist1": {
+      "firebaseKey": "1",
+      "listId": "101",
+      "name": "Noah's Tech Stuff",
+      "userId": "6LeJLGsIqZMJ5VD1d5Ic2vIKble2"
+    },
+    "wishlist2": {
+      "firebaseKey": 2,
+      "listId": "102",
+      "name": "Jane's Christmas Wishlist",
+      "userId": "uBz1jcp6pyexfRMcesCe9iloLel2"
+    },
+    "wishlist3": {
+      "firebaseKey": "3",
+      "listId": "103",
+      "name": "noahs",
+      "userId": "hHwdIpFvEbZevbbCX9T5y93vG6P2"
+    }
+  }
+}
