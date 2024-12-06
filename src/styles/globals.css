@@ -1,4 +1,23 @@
 body {
-  background: black;
+  background: rgb(230, 230, 230);
   color: white;
 }
+
+/* button for login and navbar */
+.copy-btn {
+  background-color:rgb(255, 255, 255); /* Tomato background color */
+  color:rgb(255, 69, 71); /* White text color */
+  border-color: rgb(255, 69, 71); /* Orange border */
+}
+
+.copy-btn:hover {
+  background-color: #ff4500; /* Darker tomato on hover */
+  color:rgb(230, 230, 230); /* Black text color on hover */
+  border-color: #ff6347; /* Reverse hover effect */
+}
+
+.copy-btn:focus {
+  box-shadow: 0 0 5px 2px  #7d7d7d; /* Highlight on focus */
+  outline: none; /* Remove default focus outline */
+}
+/* close button for login and navbar */

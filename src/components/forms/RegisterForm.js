@@ -16,6 +16,7 @@ function RegisterForm() {
 
   const [formData, setFormData] = useState({
     uid: user.fbUser.uid,
+    name: '',
     userName: '',
     image: '',
   });
@@ -34,12 +35,12 @@ function RegisterForm() {
         <Col xs={12} md={6} lg={4} className="fixed-width">
           <Form onSubmit={handleSubmit} style={{ color: 'white' }}>
             <Form.Group className="mb-3" controlId="formBasicUserName">
-              <Form.Label>Username</Form.Label>
-              <Form.Control type="text" name="userName" required placeholder="Enter A Username" onChange={({ target }) => setFormData((prev) => ({ ...prev, [target.name]: target.value }))} />
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="text" name="name" required placeholder="Enter your Name" onChange={({ target }) => setFormData((prev) => ({ ...prev, [target.name]: target.value }))} />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicAbout">
-              <Form.Label style={{ color: 'white' }}>Name</Form.Label>
-              <Form.Control as="textarea" rows={3} type="text" name="about" required placeholder="Enter your Name" onChange={({ target }) => setFormData((prev) => ({ ...prev, [target.name]: target.value }))} />
+              <Form.Label style={{ color: 'white' }}>UserName</Form.Label>
+              <Form.Control as="textarea" rows={3} type="text" name="userName" required placeholder="Create a UserName" onChange={({ target }) => setFormData((prev) => ({ ...prev, [target.name]: target.value }))} />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicImage">
               <Form.Label>Profile Image</Form.Label>
@@ -60,8 +61,9 @@ RegisterForm.propTypes = {
     // imageUrl: PropTypes.string.isRequired,
     fbUser: PropTypes.shape({
       uid: PropTypes.string.isRequired,
-      displayName: PropTypes.string.isRequired,
-      email: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      userName: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 };

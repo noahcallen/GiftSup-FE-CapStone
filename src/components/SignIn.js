@@ -1,23 +1,29 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 import { signIn } from '../utils/auth';
 
 function Signin() {
   return (
     <div
-      className="text-center d-flex flex-column justify-content-center align-content-center"
+      className="d-flex flex-column justify-content-center align-items-center"
       style={{
-        height: '90vh',
-        padding: '30px',
-        maxWidth: '400px',
-        margin: '0 auto',
+        height: '100vh',
+        margin: 0,
       }}
     >
-      <h1>Welcome To GiftSup.io</h1>
-      <p>Click the button below to login!</p>
-      <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
-        Git Gifting
-      </Button>
+      <div
+        className="text-center d-flex flex-column justify-content-center align-content-center"
+        style={{
+          padding: '30px',
+          maxWidth: '400px',
+          width: '100%', // Ensure the inner content stays centered
+        }}
+      >
+        <Image src="/images/GiftSupNoBNG.png" alt="" style={{ maxWidth: '700px', marginBottom: '20px', display: 'flex', justifyContent: 'center' }} />
+        <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
+          Sign In
+        </Button>
+      </div>
     </div>
   );
 }
