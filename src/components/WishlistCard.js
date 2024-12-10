@@ -34,14 +34,13 @@ function WishlistCard({ listObj, onUpdate }) {
         <Col>
           <h5 className="m-0">{listObj.name}</h5>
           <p className="m-0" style={{ fontSize: '0.9rem' }}>
-            <strong>Store:</strong> {listObj.storeName || 'N/A'}
             <br />
             <strong>Favorite:</strong> {listObj.favorite ? 'Yes' : 'No'}
           </p>
         </Col>
       </Row>
       <div className="d-flex justify-content-start mt-2">
-        <Link href={`/items/${listObj.firebaseKey}`} passHref>
+        <Link href={`/wishlists/${listObj.firebaseKey}`} passHref>
           <Button variant="primary" size="sm" className="me-2">
             VIEW
           </Button>
@@ -63,8 +62,6 @@ WishlistCard.propTypes = {
   listObj: PropTypes.shape({
     image: PropTypes.string,
     name: PropTypes.string,
-    storeName: PropTypes.string,
-    url: PropTypes.string,
     favorite: PropTypes.bool,
     firebaseKey: PropTypes.string,
   }).isRequired,

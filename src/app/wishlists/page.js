@@ -17,7 +17,7 @@ function ViewWishlist() {
   const fetchAllLists = () => {
     getWishLists(user.uid).then(setLists);
   };
-
+  console.warn(lists);
   // Fetch items on component render
   useEffect(() => {
     getWishLists(user.uid).then(setLists);

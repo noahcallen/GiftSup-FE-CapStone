@@ -11,7 +11,6 @@ import { createWishlist, updateWishlist } from '../../api/wishlistData';
 
 const initialState = {
   name: '',
-  description: '',
   image: '',
   listId: '',
   favorite: false,
@@ -41,7 +40,8 @@ function WishlistForm({ obj = initialState }) {
     } else {
       const payload = { ...formInput, uid: user.uid };
       createWishlist(payload).then(({ name }) => {
-        const patchPayload = { firebaseKey: name };
+        // name is the Firebase-generated key
+        const patchPayload = { firebaseKey: name, listId: name };
         updateWishlist(patchPayload).then(() => {
           router.push('/wishlists');
         });
@@ -88,11 +88,10 @@ function WishlistForm({ obj = initialState }) {
 WishlistForm.propTypes = {
   obj: PropTypes.shape({
     name: PropTypes.string,
-    url: PropTypes.string,
     image: PropTypes.string,
-    listId: PropTypes.number,
+    listId: PropTypes.string,
     favorite: PropTypes.bool,
-    firebaseKey: PropTypes.number,
+    firebaseKey: PropTypes.string,
   }),
 };
 

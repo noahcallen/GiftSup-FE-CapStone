@@ -73,7 +73,7 @@ function ItemForm({ obj = initialState }) {
 
       {/* WISHLIST SELECT DROPDOWN */}
       <FloatingLabel controlId="floatingSelect" label="Select Wishlist" className="mb-3">
-        <Form.Select name="listId" value={formInput.listId || ''} onChange={handleChange} required>
+        <Form.Select name="listId" value={formInput.listId} onChange={handleChange} required>
           <option value="">Select a Wishlist</option>
           {wishlists.map((wishlist) => (
             <option key={wishlist.firebaseKey} value={wishlist.listId}>
@@ -110,7 +110,7 @@ ItemForm.propTypes = {
     name: PropTypes.string,
     url: PropTypes.string,
     image: PropTypes.string,
-    listId: PropTypes.number,
+    listId: PropTypes.string,
     favorite: PropTypes.bool,
     firebaseKey: PropTypes.number,
   }),
