@@ -17,11 +17,6 @@ export default function NavBar() {
 
         {/* Navigation Buttons */}
         <Nav className="ms-3 d-flex align-items-center">
-          <Link passHref href="/stores">
-            <Button type="button" size="md" className="copy-btn" style={{ marginLeft: '15px', marginRight: '15px', height: '40px' }}>
-              My Stores
-            </Button>
-          </Link>
           <Link passHref href="/wishlists">
             <Button type="button" size="md" className="copy-btn" style={{ marginLeft: '15px', marginRight: '15px', height: '40px' }}>
               My Wishlists

@@ -5,7 +5,7 @@ const endpoint = clientCredentials.databaseURL;
 
 const getWishLists = (uid) =>
   new Promise((resolve, reject) => {
-    fetch(`${endpoint}/wishlists.json?orderBy="userId"&equalTo="${uid}"`, {
+    fetch(`${endpoint}/wishlists.json?orderBy="uid"&equalTo="${uid}"`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ const getWishLists = (uid) =>
 
 const getWishlistsByUserId = (uid) =>
   new Promise((resolve, reject) => {
-    fetch(`${endpoint}/wishlists.json?orderBy="userId"&equalTo="${uid}"`, {
+    fetch(`${endpoint}/wishlists.json?orderBy="uid"&equalTo="${uid}"`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const getSingleWishlist = (firebaseKey) =>
 
 const getWishlistNamesByUserId = (userId) =>
   new Promise((resolve, reject) => {
-    fetch(`https://gitsup-c2de3-default-rtdb.firebaseio.com/wishlists.json?orderBy="userId"&equalTo="${userId}"`, {
+    fetch(`https://gitsup-c2de3-default-rtdb.firebaseio.com/wishlists.json?orderBy="uid"&equalTo="${userId}"`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
