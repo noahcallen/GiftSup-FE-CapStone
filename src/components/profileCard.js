@@ -25,12 +25,12 @@ function ProfileCard({ userData }) {
         }}
       />
       <h2 className="mb-3">@{userData.userName}</h2>
-      <ButtonGroup className="mb-3" style={{ gap: '10px' }}>
-        <Button type="button" variant="outline-primary" size="lg" className="mb-3" style={{ fontSize: '1.5rem', fontWeight: 'bold', border: '0px' }}>
-          ➕
+      <ButtonGroup className="mb-3" style={{}}>
+        <Button className="friends-btn" type="button" variant="primary" size="lg">
+          +
         </Button>
 
-        <Button type="button" variant="primary" size="lg">
+        <Button className="friends-btn" type="button" variant="primary" size="lg">
           Friends
         </Button>
       </ButtonGroup>

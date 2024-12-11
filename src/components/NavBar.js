@@ -31,11 +31,10 @@ export default function NavBar() {
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-          <Nav>
-            {/* Profile Icon */}
+          {/* <Nav>
             <Link passHref href="/notifications">
               <img
-                src="/images/notifications.png" // Path to your profile icon image
+                src="/images/notifications.png"
                 alt=""
                 style={{
                   marginRight: '10px',
@@ -45,7 +44,7 @@ export default function NavBar() {
                 }}
               />
             </Link>
-          </Nav>
+          </Nav> */}
           <Nav>
             {/* Profile Icon */}
             <Link passHref href="/profile/uid">

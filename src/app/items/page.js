@@ -26,7 +26,7 @@ function ViewItems() {
   return (
     <div className="text-center my-4">
       <Link href="/items/new" passHref>
-        <Button>Add An Item</Button>
+        <Button className="add-btn">Add An Item</Button>
       </Link>
       <div className="d-flex flex-wrap justify-content-center">
         {/* Map over items and display them using ItemCard */}

@@ -2,14 +2,11 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Link from 'next/link';
+import Dropdown from 'react-bootstrap/Dropdown';
 import { deleteItem } from '../api/itemData';
 
 function ItemCard({ itemObj, onUpdate }) {
-  // FOR DELETE, WE NEED TO REMOVE THE ITEM AND HAVE THE VIEW RERENDER,
-  // SO WE PASS THE FUNCTION FROM THE PARENT THAT GETS THE ITEMS
   const deleteThisItem = () => {
     if (window.confirm(`Delete ${itemObj.name}?`)) {
       deleteItem(itemObj.firebaseKey).then(() => onUpdate());
@@ -17,35 +14,36 @@ function ItemCard({ itemObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '18rem', margin: '10px' }}>
-      <Card.Img variant="top" src={itemObj.image} alt={itemObj.name} style={{ height: '200px', objectFit: 'cover' }} />
-      <Card.Body>
-        <Card.Title>{itemObj.name}</Card.Title>
-        <p className="card-text">
-          <strong>Store:</strong> {itemObj.storeName || 'N/A'}
-        </p>
-        <p className="card-text">
+    <Card className="fixed-size-card">
+      <Card.Img variant="top" src={itemObj.image} alt={itemObj.name} className="card-img-top" />
+      <Card.Body className="fixed-size-card-body">
+        <Card.Title className="truncate-text">{itemObj.name}</Card.Title>
+
+        <p className="card-text truncate-text">
           <strong>URL:</strong>{' '}
           <a href={itemObj.url} target="_blank" rel="noopener noreferrer">
             View Item
           </a>
         </p>
-        <p className="card-text">
-          <strong>Favorite:</strong> {itemObj.favorite ? 'Yes' : 'No'}
+        <p className="card-text truncate-text">
+          <strong>Top Item:</strong> {itemObj.favorite ? 'Yes' : 'No'}
         </p>
-        {/* DYNAMIC LINK TO VIEW THE ITEM DETAILS */}
-        <Link href={`/items/${itemObj.firebaseKey}`} passHref>
-          <Button variant="primary" className="m-2">
-            VIEW
-          </Button>
-        </Link>
-        {/* DYNAMIC LINK TO EDIT THE ITEM DETAILS */}
-        <Link href={`/items/edit/${itemObj.firebaseKey}`} passHref>
-          <Button variant="info">EDIT</Button>
-        </Link>
-        <Button variant="danger" onClick={deleteThisItem} className="m-2">
-          DELETE
-        </Button>
+
+        {/* Dropdown for Actions */}
+        <Dropdown>
+          <Dropdown.Toggle className="dropdown-select" variant="success" id="dropdown-basic" />
+          <Dropdown.Menu>
+            <Dropdown.Item className="dropdown-select" href={`/items/${itemObj.firebaseKey}`}>
+              View
+            </Dropdown.Item>
+            <Dropdown.Item className="dropdown-select" href={`/items/edit/${itemObj.firebaseKey}`}>
+              Edit
+            </Dropdown.Item>
+            <Dropdown.Item className="dropdown-select" onClick={deleteThisItem}>
+              Delete
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Card.Body>
     </Card>
   );

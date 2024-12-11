@@ -38,50 +38,14 @@ export default function ProfilePage() {
   return (
     <div style={{ position: 'relative', minHeight: '100vh', padding: '20px' }}>
       {/* Settings Icon in top right corner */}
-      <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
-        <img src="/images/settings.png" alt="Settings" style={{ height: '30px', width: '30px', cursor: 'pointer' }} onClick={handleToggleMenu} />
+      <div className="settings-container">
+        <img src="/images/settings.png" alt="Settings" className="settings-icon" onClick={handleToggleMenu} />
         {showMenu && (
-          <div
-            style={{
-              position: 'absolute',
-              top: '40px',
-              right: '0',
-              background: '#fff',
-              border: '1px solid #ccc',
-              borderRadius: '4px',
-              boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-              zIndex: 999,
-              overflow: 'hidden',
-            }}
-          >
-            <button
-              type="button"
-              onClick={handleEditProfile}
-              style={{
-                display: 'block',
-                width: '140%',
-                padding: '10px',
-                border: 'none',
-                background: 'transparent',
-                textAlign: 'left',
-                cursor: 'pointer',
-              }}
-            >
+          <div className="settings-menu">
+            <button type="button" onClick={handleEditProfile}>
               Edit Profile
             </button>
-            <button
-              type="button"
-              onClick={signOut}
-              style={{
-                display: 'flex',
-                width: '140%',
-                padding: '10px',
-                border: 'none',
-                background: 'transparent',
-                textAlign: 'left',
-                cursor: 'pointer',
-              }}
-            >
+            <button type="button" onClick={signOut}>
               Sign Out
             </button>
           </div>
