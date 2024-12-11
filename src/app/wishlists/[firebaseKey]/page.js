@@ -4,45 +4,68 @@
 
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { getSingleWishlist, getWishListsByListId } from '../../../api/wishlistData';
+import { getSingleWishlist } from '../../../api/wishlistData';
+import { getItemsByListId } from '../../../api/itemData';
 
-export default function ViewItem({ params }) {
-  // Initializing state for item details and wishlist details
-  const [listDetails, setlistDetails] = useState({});
+export default function ViewWishlist({ params }) {
+  const [listDetails, setListDetails] = useState({});
+  const [items, setItems] = useState([]);
 
-  // Getting the firebaseKey from the params (used to fetch specific item details)
   const { firebaseKey } = params;
 
-  // Fetching the item details based on firebaseKey whenever it changes
   useEffect(() => {
-    getSingleWishlist(firebaseKey).then((item) => {
-      setlistDetails(item); // Storing the fetched item details
+    // Fetching the wishlist details based on its firebaseKey
+    getSingleWishlist(firebaseKey).then((wishlist) => {
+      setListDetails(wishlist);
     });
   }, [firebaseKey]);
 
-  // Fetching wishlist details based on the listId from the fetched item details
   useEffect(() => {
     if (listDetails.listId) {
-      // Only fetch wishlist details if the item has a listId
-      getWishListsByListId(listDetails.listId).then(() => {});
+      getItemsByListId(listDetails.listId).then((itemsArray) => {
+        setItems(itemsArray);
+      });
     }
-  }, []);
+  }, [listDetails.listId]);
 
   return (
-    <div className="mt-5 d-flex flex-wrap">
+    <div className="mt-5 d-flex flex-wrap text-white">
       <div className="d-flex flex-column">
-        <img src={listDetails.image} alt={listDetails?.name} style={{ width: '300px' }} />
+        <img src={listDetails.image} alt={listDetails?.name} style={{ width: '300px', borderRadius: '8px' }} />
       </div>
-      <div className="text-white ms-5 details">
+      <div className="ms-5 details">
         <h5>
-          {listDetails.name} {listDetails?.favorite ? '🤍' : ''} {/* Displaying the item name and a heart if it's a favorite */}
+          {listDetails.name} {listDetails?.favorite ? '🤍' : ''}
         </h5>
+        <hr />
+        <h6>Items in this wishlist:</h6>
+        {items.length > 0 ? (
+          <ul style={{ listStyleType: 'none', padding: 0 }}>
+            {items.map((item) => (
+              <li key={item.firebaseKey} style={{ marginBottom: '10px' }}>
+                <div className="d-flex align-items-center">
+                  <img src={item.image} alt={item.name} style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '4px', marginRight: '10px' }} />
+                  <div>
+                    <strong>{item.name}</strong>
+                    <br />
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>
+                      View Item
+                    </a>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>No items found in this wishlist.</p>
+        )}
       </div>
     </div>
   );
 }
 
-// PropTypes for type-checking, making sure params is an object
-ViewItem.propTypes = {
-  params: PropTypes.objectOf({}).isRequired,
+ViewWishlist.propTypes = {
+  params: PropTypes.shape({
+    firebaseKey: PropTypes.string.isRequired,
+  }).isRequired,
 };

@@ -78,9 +78,9 @@ const getSingleWishlist = (firebaseKey) =>
       .catch(reject);
   });
 
-const getWishlistNamesByUserId = (userId) =>
+const getWishlistNamesByUserId = (uid) =>
   new Promise((resolve, reject) => {
-    fetch(`https://gitsup-c2de3-default-rtdb.firebaseio.com/wishlists.json?orderBy="uid"&equalTo="${userId}"`, {
+    fetch(`https://gitsup-c2de3-default-rtdb.firebaseio.com/wishlists.json?orderBy="uid"&equalTo="${uid}"`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
