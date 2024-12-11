@@ -4,55 +4,54 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col, Row, Card, Button } from 'react-bootstrap';
-import Link from 'next/link';
+import { Card, Dropdown } from 'react-bootstrap';
+import { useRouter } from 'next/navigation';
 import { deleteWishlist } from '../api/wishlistData';
 
 function WishlistCard({ listObj, onUpdate }) {
+  const router = useRouter();
+
   const deleteThisList = () => {
     if (window.confirm(`Delete ${listObj.name}?`)) {
       deleteWishlist(listObj.firebaseKey).then(() => onUpdate());
     }
   };
 
+  const handleView = () => {
+    router.push(`/wishlists/${listObj.firebaseKey}`);
+  };
+
+  const handleEdit = () => {
+    router.push(`/wishlists/edit/${listObj.firebaseKey}`);
+  };
+
   return (
-    <Card style={{ maxWidth: '400px', border: '1px solid #ccc', padding: '5px', margin: '10px' }}>
-      <Row className="g-0 align-items-center">
-        <Col xs="auto">
-          <img
-            src={listObj.image}
-            alt={listObj.name}
-            style={{
-              width: '40px',
-              height: '40px',
-              objectFit: 'cover',
-              borderRadius: '4px',
-              marginRight: '10px',
-            }}
-          />
-        </Col>
-        <Col>
-          <h5 className="m-0">{listObj.name}</h5>
-          <p className="m-0" style={{ fontSize: '0.9rem' }}>
-            <br />
-            <strong>Favorite:</strong> {listObj.favorite ? 'Yes' : 'No'}
+    <Card className="fixed-size-wishlist-card">
+      <div className="wishlist-row">
+        <img src={listObj.image} alt={listObj.name} className="wishlist-thumbnail" />
+        <div className="wishlist-details">
+          <h5>{listObj.name}</h5>
+          <p>
+            <strong>Top Wishlist:</strong> {listObj.favorite ? 'Yes' : 'No'}
           </p>
-        </Col>
-      </Row>
-      <div className="d-flex justify-content-start mt-2">
-        <Link href={`/wishlists/${listObj.firebaseKey}`} passHref>
-          <Button variant="primary" size="sm" className="me-2">
-            VIEW
-          </Button>
-        </Link>
-        <Link href={`/wishlists/edit/${listObj.firebaseKey}`} passHref>
-          <Button variant="info" size="sm" className="me-2">
-            EDIT
-          </Button>
-        </Link>
-        <Button variant="danger" size="sm" onClick={deleteThisList}>
-          DELETE
-        </Button>
+        </div>
+      </div>
+
+      <div className="action-dropdown">
+        <Dropdown className="dropdown-select">
+          <Dropdown.Toggle className="dropdown-select" variant="success" size="sm" id="dropdown-basic" />
+          <Dropdown.Menu className="dropdown-select">
+            <Dropdown.Item className="dropdown-select" onClick={handleView}>
+              View
+            </Dropdown.Item>
+            <Dropdown.Item className="dropdown-select" onClick={handleEdit}>
+              Edit
+            </Dropdown.Item>
+            <Dropdown.Item className="dropdown-select" onClick={deleteThisList}>
+              Delete
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
     </Card>
   );

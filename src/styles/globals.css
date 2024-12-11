@@ -11,9 +11,9 @@ body {
 }
 
 .copy-btn:hover {
-  background-color: #ff4500; /* Darker tomato on hover */
+  background-color:rgb(255, 69, 71); /* Darker tomato on hover */
   color:rgb(230, 230, 230); /* Black text color on hover */
-  border-color: #ff6347; /* Reverse hover effect */
+  border-color: rgb(255, 69, 71); /* Reverse hover effect */
 }
 
 .copy-btn:focus {
@@ -21,3 +21,232 @@ body {
   outline: none; /* Remove default focus outline */
 }
 /* close button for login and navbar */
+
+/* button for adding things */
+.add-btn {
+  background-color:rgb(128, 128, 128); /* Tomato background color */
+  color:rgb(255, 255, 255); /* White text color */
+  border-color: rgb(128, 128, 128);
+}
+
+.add-btn:hover {
+  background-color: rgb(255, 255, 255); /* Darker tomato on hover */
+  color:rgb(0, 0, 0); /* Black text color on hover */
+  border-color: rgb(128, 128, 128); /* Reverse hover effect */
+}
+
+.add-btn:focus {
+  box-shadow: 0 0 5px 2px  #7d7d7d; /* Highlight on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* CLOSE button for adding things */
+
+
+/* for forms  */
+.centered-form-container {
+  color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Fill the viewport height */
+}
+
+.centered-form {
+  text-align: center;      /* Center text inside the form */
+  max-width: 600px;        /* Limit the max width of the form */
+  width: 100%;             /* Ensure form takes full width up to max-width */
+  color: black;            /* Set the text color for the form */
+  padding: 20px;           /* Optional padding around the form */
+}
+
+.form-check {
+  color: black;
+}
+
+/* close forms */
+
+.form-check-input:checked {
+  background-color: rgb(255, 69, 71) !important; /* 'danger' red from Bootstrap */
+  border-color: rgb(255, 69, 71) !important;
+}
+
+.dropdown-select {
+  background-color:rgb(255, 255, 255); /* Tomato background color */
+  color:rgb(255, 69, 71); /* White text color */
+  border-color: rgb(255, 69, 71);
+}
+
+.dropdown-select:enabled {
+  background-color:rgb(255, 255, 255); /* Tomato background color */
+  color:rgb(255, 69, 71); /* White text color */
+  border-color: rgb(255, 69, 71);
+}
+
+.dropdown-select:hover {
+  background-color:rgb(255, 69, 71); /* Darker tomato on hover */
+  color:rgb(230, 230, 230); /* Black text color on hover */
+  border-color: rgb(255, 69, 71); /* Reverse hover effect */
+}
+
+.dropdown-select:focus {
+  box-shadow: 0 0 5px 2px  #7d7d7d; /* Highlight on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.friends-btn {
+  background-color:rgb(230, 230, 230); /* Tomato background color */
+  color:rgb(0, 0, 0); /* White text color */
+  border-color: rgb(128, 128, 128);
+}
+
+.friends-btn:hover {
+  background-color: rgb(230, 230, 230); /* Darker tomato on hover */
+  color:rgb(0, 0, 0); /* Black text color on hover */
+  border-color: rgb(128, 128, 128); /* Reverse hover effect */
+}
+
+.friends-btn:focus {
+  box-shadow: 0 0 5px 2px  #7d7d7d; /* Highlight on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.settings-container {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+}
+
+.settings-icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.settings-icon:hover {
+  opacity: 0.8;
+}
+
+.settings-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.settings-menu button {
+  display:list-item;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background 0.2s ease-in-out;
+}
+
+.settings-menu button:hover {
+  background: #f5f5f5;
+}
+
+.fixed-size-card {
+  width: 16rem;          /* Slightly wider than before */
+  height: 320px;         /* Slightly taller than before */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.fixed-size-card .card-img-top {
+  height: 140px;          /* Increase image height for better visibility */
+  object-fit: cover;
+}
+
+.fixed-size-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;       /* Return to a normal font size */
+  padding: 10px;
+}
+
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+}
+
+.action-dropdown {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fixed-size-wishlist-card {
+  width: 66rem;        /* Adjust as needed for uniform sizing */
+  height: 150px;       /* Adjust the height for a consistent look */
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.fixed-size-wishlist-card .wishlist-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.wishlist-details {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wishlist-details h5 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.wishlist-details p {
+  margin: 0;
+}
+
+.action-dropdown {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
