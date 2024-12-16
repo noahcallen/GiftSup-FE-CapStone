@@ -197,8 +197,8 @@ body {
 }
 
 .fixed-size-wishlist-card {
-  width: 66rem;        /* Adjust as needed for uniform sizing */
-  height: 150px;       /* Adjust the height for a consistent look */
+  width: 66rem;
+  height: 150px;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -207,6 +207,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  position: relative; /* Important for absolute positioning */
 }
 
 .fixed-size-wishlist-card .wishlist-row {
@@ -246,7 +247,8 @@ body {
 }
 
 .action-dropdown {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  z-index: 10; /* Make sure it stays above other elements */
 }

@@ -27,19 +27,10 @@ function WishlistCard({ listObj, onUpdate }) {
 
   return (
     <Card className="fixed-size-wishlist-card">
-      <div className="wishlist-row">
-        <img src={listObj.image} alt={listObj.name} className="wishlist-thumbnail" />
-        <div className="wishlist-details">
-          <h5>{listObj.name}</h5>
-          <p>
-            <strong>Top Wishlist:</strong> {listObj.favorite ? 'Yes' : 'No'}
-          </p>
-        </div>
-      </div>
-
       <div className="action-dropdown">
         <Dropdown className="dropdown-select">
           <Dropdown.Toggle className="dropdown-select" variant="success" size="sm" id="dropdown-basic" />
+
           <Dropdown.Menu className="dropdown-select">
             <Dropdown.Item className="dropdown-select" onClick={handleView}>
               View
@@ -52,6 +43,16 @@ function WishlistCard({ listObj, onUpdate }) {
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
+      </div>
+
+      <div className="wishlist-row">
+        <img src={listObj.image} alt={listObj.name} className="wishlist-thumbnail" />
+        <div className="wishlist-details">
+          <h5>{listObj.name}</h5>
+          <p>
+            <strong>Top Wishlist:</strong> {listObj.favorite ? 'Yes' : 'No'}
+          </p>
+        </div>
       </div>
     </Card>
   );
