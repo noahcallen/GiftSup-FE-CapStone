@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Container, Button, ButtonGroup } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 function ProfileCard({ userData }) {
   return (
@@ -25,7 +25,7 @@ function ProfileCard({ userData }) {
         }}
       />
       <h2 className="mb-3">@{userData.userName}</h2>
-      <ButtonGroup className="mb-3" style={{}}>
+      {/* <ButtonGroup className="mb-3" style={{}}>
         <Button className="friends-btn" type="button" variant="primary" size="lg">
           +
         </Button>
@@ -33,7 +33,7 @@ function ProfileCard({ userData }) {
         <Button className="friends-btn" type="button" variant="primary" size="lg">
           Friends
         </Button>
-      </ButtonGroup>
+      </ButtonGroup> */}
     </Container>
   );
 }

@@ -7,7 +7,7 @@ export default function Loading() {
       <Spinner
         animation="border"
         style={{
-          color: '#00BF67',
+          color: '#fd4646',
           width: '100px',
           height: '100px',
         }}
