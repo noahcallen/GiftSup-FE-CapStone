@@ -131,7 +131,7 @@ Frontend:
 ---
 
 ## 🎥 **Video Walkthrough**
-Watch how it works in under 2 minute: [here](https://www.loom.com/share/270f878307c047aab0206190b29e1e6a?sid=335967aa-75ba-47e5-8d99-563462a55f63)
+Watch how it works in under 2 minute: [here](https://www.loom.com/share/9db469e92e5d4d19a86636001688d2a2?sid=89e31095-2020-498d-a801-b69e53db3a2c)
 
 ---
 
