@@ -19,7 +19,7 @@ Take a sneak peek at how the app comes together:
 ---
 
 ## 🌐 **Live Project**
-Experience the magic here: [GiftSup.io](https://gitsupio.netlify.app)
+Experience the magic here: [GiftSup.io](https://giftsupio.netlify.app/)
 
 ---
 
