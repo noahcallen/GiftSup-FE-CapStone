@@ -51,14 +51,6 @@ Follow our development journey: [GitHub Project Board](https://github.com/users/
 
 ---
 
-## 📸 **Screenshots**
-
-![image](https://github.com/user-attachments/assets/119836e5-740e-4202-9fcf-225408569322)
-![image](https://github.com/user-attachments/assets/595ce8bd-08d7-4beb-b69e-21410287f20a)
-![image](https://github.com/user-attachments/assets/d922a970-d6b7-4bd0-97c3-c57c06e9bae8)
-![image](https://github.com/user-attachments/assets/750b4495-de9e-4eed-a9a6-e88327cf614d)
-
----
 ## 🎉 Features Coming Soon 🚀
 
 We're excited to share the roadmap for **GiftSup.io**! Here’s what’s in the works to make your experience even better:
