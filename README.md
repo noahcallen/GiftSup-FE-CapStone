@@ -19,6 +19,7 @@ Take a sneak peek at how the app comes together:
 ---
 
 ## 🌐 **Live Project**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/033c0e22-2b69-461b-90b7-5e6334b5598c/deploy-status)](https://app.netlify.com/sites/giftsupio/deploys)
 Experience the magic here: [GiftSup.io](https://giftsupio.netlify.app/)
 
 ---
