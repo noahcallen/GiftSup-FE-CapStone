@@ -17,16 +17,18 @@ export default function NavBar() {
 
         {/* Navigation Buttons */}
         <Nav className="ms-3 d-flex align-items-center">
-          <Link passHref href="/wishlists">
-            <Button type="button" size="md" className="copy-btn" style={{ marginLeft: '15px', marginRight: '15px', height: '40px' }}>
-              My Wishlists
-            </Button>
-          </Link>
-          <Link passHref href="/items">
-            <Button type="button" size="md" className="copy-btn" style={{ marginLeft: '15px', marginRight: '15px', height: '40px' }}>
-              My Items
-            </Button>
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link passHref href="/wishlists">
+              <Button type="button" size="md" className="copy-btn" style={{ marginLeft: '5px', marginRight: '5px', height: '40px' }}>
+                My Wishlists
+              </Button>
+            </Link>
+            <Link passHref href="/items">
+              <Button type="button" size="md" className="copy-btn" style={{ marginLeft: '5px', marginRight: '5px', height: '40px' }}>
+                My Items
+              </Button>
+            </Link>
+          </div>
         </Nav>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -46,17 +48,10 @@ export default function NavBar() {
             </Link>
           </Nav> */}
           <Nav>
-            {/* Profile Icon */}
             <Link passHref href="/profile/uid">
-              <img
-                src="/images/user_profile.png" // Path to your profile icon image
-                alt=""
-                style={{
-                  height: '70px',
-                  width: '70px',
-                  cursor: 'pointer',
-                }}
-              />
+              <Button type="button" className=" copy-btn flex items-center justify-center rounded-full p-2 bg-blue-500 text-red" style={{ height: '40px', width: '120px' }}>
+                Profile
+              </Button>
             </Link>
           </Nav>
         </Navbar.Collapse>

@@ -46,7 +46,7 @@ function Home() {
     <Container style={{ paddingTop: '150px' }}>
       <Row>
         <Col xs={12} md={6}>
-          <Card style={{ background: 'rgb(230, 230, 230)', border: '3px solid gray', width: '600px', height: '500px', padding: '10px', overflowY: 'auto' }}>
+          <Card style={{ background: 'rgb(230, 230, 230)', border: '3px solid gray', height: '500px', padding: '10px', overflowY: 'auto' }}>
             <h4 style={{ color: 'gray', display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>Top Items</h4>
             {favoriteItems.length > 0 ? (
               <ListGroup variant="flush" style={{ overflowY: 'auto', height: '100%' }}>
@@ -63,7 +63,7 @@ function Home() {
           </Card>
         </Col>
         <Col xs={12} md={6}>
-          <Card style={{ background: 'rgb(230, 230, 230)', border: '3px solid gray', width: '600px', height: '500px', padding: '10px', overflowY: 'auto' }}>
+          <Card style={{ background: 'rgb(230, 230, 230)', border: '3px solid gray', height: '500px', padding: '10px', overflowY: 'auto' }}>
             <h4 style={{ color: 'gray', display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>Top Wishlists</h4>
             {favoriteWishlists.length > 0 ? (
               <ListGroup variant="flush" style={{ overflowY: 'auto', height: '100%' }}>
